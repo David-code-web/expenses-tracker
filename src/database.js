@@ -52,6 +52,7 @@ export async function initDatabase() {
         date TEXT NOT NULL,
         note TEXT DEFAULT ''
       )`);
+      db.run("UPDATE transactions SET category='Product loan' WHERE category='Product load'");
       await persist();
     })();
   }

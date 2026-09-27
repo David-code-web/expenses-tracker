@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { ArrowDownLeft, ArrowUpRight, CalendarDays, Check, ChevronDown, CircleHelp, Download, FileText, LayoutDashboard, LogOut, MoreHorizontal, Pencil, Plus, Search, Settings2, Trash2, TrendingUp, Wallet, X } from 'lucide-react';
 import { getTransactions, initDatabase, removeTransaction, saveTransaction } from './database.js';
 
-const categories = ['Income', 'Utility', 'Project', 'Product load', 'Food & dining', 'Transport', 'Shopping', 'Other'];
+const categories = ['Income', 'Utility', 'Project', 'Product loan', 'Food & dining', 'Transport', 'Shopping', 'Other'];
 const today = new Date().toISOString().slice(0, 10);
 const monthStart = `${today.slice(0, 7)}-01`;
 const currency = (value) => new Intl.NumberFormat('en-NG', { style: 'currency', currency: 'NGN', maximumFractionDigits: 2 }).format(Number(value || 0));

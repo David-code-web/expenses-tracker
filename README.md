@@ -5,7 +5,7 @@ A responsive React app for tracking day-to-day income and expenses. Records are 
 ## Features
 
 - Add, edit, search, and delete transactions.
-- Track income and expense categories, including utility, project, and product load.
+- Track income and expense categories, including utility, project, and product loan.
 - View income, expenses, and net balance for this month, the last 30 days, or all time.
 - Export a PDF report with totals and transaction rows for a selected date range.
 - Responsive layout; static-build friendly for Netlify.
