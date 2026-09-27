@@ -101,12 +101,12 @@ function App() {
         <div className="brand"><div className="brand-mark"><Wallet size={19} strokeWidth={2.3} /></div><span>daily<span className="brand-light">ledger</span></span></div>
         <div className="workspace-label">WORKSPACE</div>
         <nav><button className="nav-link active"><LayoutDashboard size={17} /> Overview</button><button className="nav-link" onClick={openNew}><Plus size={17} /> Transactions</button></nav>
-        <div className="side-bottom"><div className="side-divider" /><button className="nav-link"><Settings2 size={17} /> Settings</button><button className="nav-link"><CircleHelp size={17} /> Help & support</button><div className="profile"><div className="avatar">JD</div><div className="profile-copy"><strong>Jordan Davis</strong><span>Personal account</span></div><MoreHorizontal size={18} className="profile-more" /></div></div>
+        <div className="side-bottom"><div className="side-divider" /><button className="nav-link"><Settings2 size={17} /> Settings</button><button className="nav-link"><CircleHelp size={17} /> Help & support</button><div className="profile"><div className="avatar">KO</div><div className="profile-copy"><strong>Kolawole</strong><span>Personal account</span></div><MoreHorizontal size={18} className="profile-more" /></div></div>
       </aside>
       <main className="main-content">
-        <header className="topbar"><div className="breadcrumb">Workspace <span>/</span> <strong>Overview</strong></div><div className="topbar-right"><span className="today-label"><CalendarDays size={15} /> {new Date().toLocaleDateString('en', { weekday: 'short', month: 'short', day: 'numeric' })}</span><button className="avatar top-avatar" aria-label="Account">JD</button></div></header>
+        <header className="topbar"><div className="breadcrumb">Workspace <span>/</span> <strong>Overview</strong></div><div className="topbar-right"><span className="today-label"><CalendarDays size={15} /> {new Date().toLocaleDateString('en', { weekday: 'short', month: 'short', day: 'numeric' })}</span><button className="avatar top-avatar" aria-label="Account">KO</button></div></header>
         <div className="page-wrap">
-          <section className="page-heading"><div><div className="eyebrow">YOUR MONEY, AT A GLANCE</div><h1>Good day, Jordan <span className="wave">✳</span></h1><p>Here’s what’s happening with your finances.</p></div><button className="primary-button" onClick={openNew}><Plus size={17} /> Add transaction</button></section>
+          <section className="page-heading"><div><div className="eyebrow">YOUR MONEY, AT A GLANCE</div><h1>Good day, Kolawole <span className="wave">✳</span></h1><p>Here’s what’s happening with your finances.</p></div><button className="primary-button" onClick={openNew}><Plus size={17} /> Add transaction</button></section>
 
           {notice && <div className="notice" role="status"><Check size={16} />{notice}<button onClick={() => setNotice('')} aria-label="Dismiss"><X size={15} /></button></div>}
 
