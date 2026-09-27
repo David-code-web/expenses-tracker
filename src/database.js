@@ -1,4 +1,5 @@
 import initSqlJs from 'sql.js';
+import sqliteWasmUrl from 'sql.js/dist/sql-wasm.wasm?url';
 
 const DB_KEY = 'daily-ledger-sqlite';
 let db;
@@ -38,7 +39,7 @@ export async function initDatabase() {
   if (!ready) {
     ready = (async () => {
       const SQL = await initSqlJs({
-        locateFile: (file) => `${import.meta.env.BASE_URL}${file}`,
+        locateFile: () => sqliteWasmUrl,
       });
       const bytes = await loadSavedBytes();
       db = bytes ? new SQL.Database(bytes) : new SQL.Database();
